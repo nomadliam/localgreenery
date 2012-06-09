@@ -14,7 +14,7 @@ while ($row = mysql_fetch_assoc($result)) {
 
 <html>
 <body>
-You are logged in as <?php echo $_SESSION['user']['username']?> - <a href="Logout.php">Logout</a><br />
+You are logged in as <?php echo $_SESSION['user']['username']?> - <a href="Logout.php">Logout</a><?php if($_SESSION['user']['role'] == "ADMIN") echo ' - <a href="admin/">Admin Menu</a>'; ?><br />
 <h1>Welcome to Local Greenery</h1>
 <p><h2>Products:</h2></p>
 <table>
