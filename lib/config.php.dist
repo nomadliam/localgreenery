@@ -8,6 +8,6 @@ require_once('config.php');
 	define('db_name', 'localgreenery'); // Database name
 	
 	// Mail Parameters
-	define('selleremail', 'nomadliam@mash-heads.co.cc'); // Emails will be sent to this email
-	define('fromemail', 'localgreenery@mash-heads.co.cc'); // Emails will be sent from this email address
+	define('selleremail', 'seller@domain.com'); // Emails will be sent to this email
+	define('fromemail', 'donotreply@domain.com'); // Emails will be sent from this email address
 ?>
