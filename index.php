@@ -36,11 +36,13 @@ while ($row = mysql_fetch_assoc($result)) {
 		</td>
 	</tr>
 <?php endforeach;?>
+</table>
 <?php else: ?>
 	<p>
 		<h3>No products available. Please try again later.</h3>
 	</p>
 <?php endif; ?>
+
 <?php include(LG_ROOT . DS . 'templates' . DS . 'footer.php'); ?>
 </body>
 </html>
