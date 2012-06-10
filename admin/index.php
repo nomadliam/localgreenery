@@ -11,12 +11,13 @@ $sellerStatus = $row[0];
 <title>Admin Menu - LocalGreenery</title>
 </head>
 <body>
-Logged in as <?php echo $_SESSION['user']['username']; ?><br />
+<?php include(LG_ROOT . DS . 'templates' . DS . 'header.php'); ?>
 <h1>LocalGreenery - Admin Menu</h1>
 <ul>
 	<li>Current Status: <a href="changestatus.php"><?php echo $sellerStatus; ?></a></li>
 	<li><a href="users/">Users</a></li>
 	<li><a href="products/">Products</a></li>
 </ul>
+<?php include(LG_ROOT . DS . 'templates' . DS . 'footer.php'); ?>
 </body>
 </html>

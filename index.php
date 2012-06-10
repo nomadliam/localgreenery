@@ -14,7 +14,7 @@ while ($row = mysql_fetch_assoc($result)) {
 
 <html>
 <body>
-You are logged in as <?php echo $_SESSION['user']['username']?> - <a href="Logout.php">Logout</a> - <a href="changepassword.php">Change Password</a><?php if($_SESSION['user']['role'] == "ADMIN") echo ' - <a href="admin/">Admin Menu</a>'; ?><br />
+<?php include(LG_ROOT . DS . 'templates' . DS . 'header.php'); ?>
 <h1>Welcome to Local Greenery</h1>
 <p><h2>Products:</h2></p>
 <table>
@@ -41,5 +41,6 @@ You are logged in as <?php echo $_SESSION['user']['username']?> - <a href="Logou
 		<h3>No products available. Please try again later.</h3>
 	</p>
 <?php endif; ?>
+<?php include(LG_ROOT . DS . 'templates' . DS . 'footer.php'); ?>
 </body>
 </html>

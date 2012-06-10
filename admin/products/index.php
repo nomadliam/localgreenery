@@ -13,6 +13,7 @@ while($row = mysql_fetch_assoc($result)) {
 <title>User List</title>
 </head>
 <body>
+<?php include(LG_ROOT . DS . 'templates' . DS . 'header.php'); ?>
 <h1>User List</h1>
 <table>
 	<thead>
@@ -36,5 +37,6 @@ while($row = mysql_fetch_assoc($result)) {
 		<?php endforeach; ?>
 	</tbody>
 </table>
+<?php include(LG_ROOT . DS . 'templates' . DS . 'footer.php'); ?>
 </body>
 </html>

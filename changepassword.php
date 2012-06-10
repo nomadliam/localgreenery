@@ -44,7 +44,7 @@ if (isset($_POST['changepassword']) && ($_POST['changepassword']) == 'Change Pas
 		<title>Change Password</title>
 	</head>
 	<body>
-		You are logged in as <?php echo $_SESSION['user']['username']?>
+		<?php include(LG_ROOT . DS . 'templates' . DS . 'header.php'); ?>
 		<h1>Change Password</h1>
 		<form action=<?php echo $_SERVER['PHP_SELF']; ?> method="post">
 			<fieldset>
@@ -70,6 +70,6 @@ if (isset($_POST['changepassword']) && ($_POST['changepassword']) == 'Change Pas
 			</fieldset>
 			<input type="submit" name="changepassword" value="Change Password" />
 		</form>
-		<?php include(LG_ROOT . DS . 'footer.php'); ?>
+		<?php include(LG_ROOT . DS . 'templates' . DS . 'footer.php'); ?>
 	</body>
 </html>

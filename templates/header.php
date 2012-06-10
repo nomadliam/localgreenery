@@ -1,0 +1,1 @@
+You are logged in as <?php echo $_SESSION['user']['username']?> - <a href="Logout.php">Logout</a> - <a href="changepassword.php">Change Password</a><?php if($_SESSION['user']['role'] == "ADMIN") echo ' - <a href="admin/">Admin Menu</a>'; ?><br />
