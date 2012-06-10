@@ -1,1 +1,1 @@
-You are logged in as <?php echo $_SESSION['user']['username']?> - <a href="Logout.php">Logout</a> - <a href="/localgreenery/changepassword.php">Change Password</a><br />
+You are logged in as <?php echo $_SESSION['user']['username']?> - <a href="Logout.php">Logout</a> - <a href="/changepassword.php">Change Password</a><br />
