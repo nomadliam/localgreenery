@@ -40,6 +40,19 @@ if (isset($_POST['changepassword']) && ($_POST['changepassword']) == 'Change Pas
 }
 ?>
 <html>
+<style type="text/css">
+body,td,th {
+	color: #333;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+body {
+	background-color: #660;
+	margin-left: 30%;
+	margin-top: 5%;
+	margin-right: 30%;
+	margin-bottom: 5%;
+}
+</style>
 	<head>
 		<title>Change Password</title>
 	</head>
