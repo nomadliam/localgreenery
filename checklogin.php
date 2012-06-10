@@ -10,6 +10,7 @@ $myusername = stripslashes($myusername);
 $mypassword = stripslashes($mypassword);
 $myusername = mysql_real_escape_string($myusername);
 $mypassword = mysql_real_escape_string($mypassword);
+$mypassword = md5($mypassword);
 $sql="SELECT * FROM members WHERE username='$myusername' and password='$mypassword'";
 $result=mysql_query($sql);
 
