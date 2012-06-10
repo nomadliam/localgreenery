@@ -1,12 +1,13 @@
 <?php
+require_once('config.php');
 // Main config file 
 	// Database parameters
-	$db_host = 'localhost'; // Database host
-	$db_username = 'root'; // Database username
-	$db_password = 'password'; // Database password
-	$db_name = 'localgreenery'; // Database name
+	define('db_host', 'localhost'); // Database host
+	define('db_user', 'root'); // Database username
+	define('db_pass', ''); // Database password
+	define('db_name', 'localgreenery'); // Database name
 	
 	// Mail Parameters
-	define('selleremail', 'nomadliam@mash-heads.co.cc');
-	define('fromemail', 'localgreenery@mash-heads.co.cc');
+	define('selleremail', 'nomadliam@mash-heads.co.cc'); // Emails will be sent to this email
+	define('fromemail', 'localgreenery@mash-heads.co.cc'); // Emails will be sent from this email address
 ?>
